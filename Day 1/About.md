@@ -9,6 +9,7 @@ This web page showcases a QR code component created using HTML and CSS. The page
 a simple example of using basic CSS properties and flexbox to create a visually appealing layout.
 
 ## Screenshot
+![Screenshot](https://github.com/amrita150/100-Projects-In-100-Days/blob/main/Day%201/Screenshot.png)
 
 ## What I Learned
 I learned about use of CSS flexbox and how to set units to make website responsive. 
