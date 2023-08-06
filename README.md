@@ -14,6 +14,13 @@ Welcome to my "100 Projects in 100 Days" challenge for full stack development! I
 This challenge is all about mastering full stack development, starting from the basics and gradually moving to more complex projects. Each day, I'll tackle a new project, working with various technologies and techniques to create web applications that showcase my growing skills.
 
 ## Projects
+Here is a collection of projects I've already completed during my "100 Projects in 100 Days" challenge.
+
+### Day 1: QR Code Component
+- **Description:** A simple responsive web page 
+- **Technologies:** HTML, CSS
+- **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%201/)
+- **Live Demo:** [Link to Live Demo](https://100-projects-in-100-days.vercel.app/)
 
 
 ## Learning Goals
