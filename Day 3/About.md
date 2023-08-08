@@ -8,7 +8,7 @@ This web page showcases a 3-column preview component using HTML and CSS. The pag
 a simple example of using basic CSS properties and flexbox to create a visually appealing layout.
 
 ## Screenshot
-![Screenshot](https://github.com/amrita150/100-Projects-In-100-Days/blob/main/Day%201/Screenshot.png)
+![Screenshot](https://github.com/amrita150/100-Projects-In-100-Days/blob/main/Day%203/Screenshots/Screenshot%20desktop.png)
 
 ## What I Learned
 I learned about 
