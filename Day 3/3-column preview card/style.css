@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --btn-text-color-1: hsl(31, 77%, 52%);
+    --btn-text-color-2: hsl(184, 100%, 22%);
+    --btn-text-color-3: hsl(179, 100%, 13%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* margin-top: 10%;will look */
+    max-width: 1440px;
+}
+  
+.car{
+   width: 14rem;
+   height: 22rem;
+   padding: 30px 10px 30px 40px;
+   color: white;
+}
+.icon-container{
+    padding-bottom: 1.5rem;
+}
+
+p{
+   font-family: 'Lexend Deca', sans-serif;
+   font-weight:  200px;
+   font-size: 13px;
+   text-align: left;
+   margin-bottom: 1rem;
+   line-height: 1.2rem;
+   color: hsla(0, 0%, 100%, 0.75);
+}
+h1 {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  padding-bottom: 1rem;
+
+}
+
+.car1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.car2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.car3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.btn button{
+    background-color: #ffffff;
+    padding: 10px 20px ;
+    cursor: pointer;
+    border-radius: 30px ;
+    border: 2px solid #ffffff;
+    text-align: centers;
+    margin: 30px 15px 20px 0;
+}
+
+.btn-1 button{
+color: var(--btn-text-color-1); 
+}
+
+.btn-2 button {
+  color: var(--btn-text-color-2);
+}
+
+.btn-3 button {
+  color: var(--btn-text-color-3);
+}
+button:hover{
+    background-color: inherit; /* Inherit the background color from the parent component */
+    color: white;
+
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .car{
+            width: 15rem;
+            height: 20rem;      
+    }
+    .car1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .car3{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .btn button{
+        margin-top: 10px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+
+}
