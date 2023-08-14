@@ -4,30 +4,26 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 1440px;
-    background-color: hsl(229, 58%, 93%);
-    height: 100vh;
-    font-size: 16px;
+body{background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./order-summary/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .main-container{
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    margin: auto;
+    width: 17rem;
     border-radius: 15px;
-    position: absolute;
+    max-width: 450px;
 }
 
 .image img{
@@ -43,7 +39,7 @@ body{
 
 h2{
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .order-para{
@@ -111,4 +107,10 @@ button:hover{
 .txt-1:hover{
     cursor: pointer;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 375px){
+    body {
+        background-image: url(./order-summary/images/pattern-background-desktop.svg);
+    }
 }
