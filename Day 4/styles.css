@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1440px;
+    background-color: hsl(229, 58%, 93%);
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.image img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.detail{
+    text-align: center;
+    margin: 1.5rem 2.5rem;
+}
+
+h2{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.order-para{
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    padding: 0 1rem;
+}
+
+.music{
+    display: flex;
+    justify-content:left;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.txt{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.txt:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsla(245, 75%, 52%, 0.527)
+}
+
+.price{
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+h5{
+    font-weight: 900;
+}
+
+.price-para{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.btn-1 button{
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    margin: 1rem 0;
+    box-shadow: 0px 15px 20px rgba(66, 71, 71, 0.4);
+    background-color: hsl(245, 75%, 52%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.671);
+}
+
+.txt-1{
+    font-size: 13px;
+}
+.txt-1:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
