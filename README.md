@@ -17,11 +17,22 @@ This challenge is all about mastering full stack development, starting from the 
 Here is a collection of projects I've already completed during my "100 Projects in 100 Days" challenge.
 
 ### Day 1: QR Code Component
-- **Description:** A simple responsive web page 
+- **Description:** A simple web page 
 - **Technologies:** HTML, CSS
 - **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%201/)
-- **Live Demo:** [Link to Live Demo](https://100-projects-in-100-days.vercel.app/)
+- **Live Demo:** [Link to Live Demo](https://100-projects-in-100-days-mpyz.vercel.app/)
 
+### Day 2: Product Preview Card
+- **Description:** A simple responsive web page 
+- **Technologies:** HTML, CSS
+- **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%202)
+- **Live Demo:** [Link to Live Demo](https://100-projects-in-100-days-kabp.vercel.app/)
+
+### Day 3: 3-column Preview Component
+- **Description:** A simple responsive web page 
+- **Technologies:** HTML, CSS
+- **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%203)
+- **Live Demo:** [Link to Live Demo](https://100-projects-in-100-days.vercel.app/)
 
 ## Learning Goals
 
