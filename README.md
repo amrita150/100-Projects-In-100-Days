@@ -34,6 +34,12 @@ Here is a collection of projects I've already completed during my "100 Projects 
 - **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%203)
 - **Live Demo:** [Link to Live Demo](https://100-projects-in-100-days.vercel.app/)
 
+### Day 4: order summary Component
+- **Description:** A simple responsive web page 
+- **Technologies:** HTML, CSS
+- **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%204)
+- **Live Demo:** [Link to Live Demo](https://order-summary-smoky.vercel.app/)
+- 
 ## Learning Goals
 
 Throughout this challenge, I aim to achieve the following:
