@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            <div>
+                <h1 class="heading">Password Generator</h1>
+            </div>
+
+            <div class="display">
+                <!-- input tag ka custom attribute (data-password-display) -->
+                <input type="text" placeholder="Password" readonly data-password-display>
+                <button class="copybtn">
+                    <span data-copyMsg></span>
+                    <img src="./images/copy.svg" alt="copy" width="25" height="25">
+                </button>
+            </div>
+
+            <div class="input-container">
+                <div class="length-container">
+                    <p>Password Length</p>
+                    <p data-length-num>0</p>
+                </div>
+            </div>
+
+            <!-- Slider -->
+            <input type="range" min="1" max="20" class="slide" step="1" data-length-slider>
+
+            <!-- checkboxes -->
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase letter</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase letter</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="number">
+                <label for="number">Include Numbers </label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Include Symbol</label>
+            </div>
+
+            <!-- Strength Section -->
+            <div class="container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <!-- generator password -->
+            <button class="btn">Generate Password</button>
+        </div>
+    </div>
+</body>
+</html>
