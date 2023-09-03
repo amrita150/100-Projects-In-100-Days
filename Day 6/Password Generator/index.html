@@ -3,19 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="main-container">
-            <div>
+            <div class="head">
                 <h1 class="heading">Password Generator</h1>
             </div>
 
             <div class="display">
                 <!-- input tag ka custom attribute (data-password-display) -->
                 <input type="text" placeholder="Password" readonly data-password-display>
-                <button class="copybtn">
-                    <span data-copyMsg></span>
+                <button class="copyBtn">
+                    <span class="tooltip" data-copyMsg></span>
                     <img src="./images/copy.svg" alt="copy" width="25" height="25">
                 </button>
             </div>
@@ -25,44 +26,45 @@
                     <p>Password Length</p>
                     <p data-length-num>0</p>
                 </div>
-            </div>
+            
 
             <!-- Slider -->
             <input type="range" min="1" max="20" class="slide" step="1" data-length-slider>
 
             <!-- checkboxes -->
-            <div>
+            <div class="check">
                 <input type="checkbox" id="uppercase">
                 <label for="uppercase">Include Uppercase letter</label>
             </div>
             
-            <div>
+            <div class="check">
                 <input type="checkbox" id="lowercase">
                 <label for="lowercase">Include Lowercase letter</label>
             </div>
             
-            <div>
+            <div class="check">
                 <input type="checkbox" id="number">
                 <label for="number">Include Numbers </label>
             </div>
             
-            <div>
+            <div class="check">
                 <input type="checkbox" id="symbol">
                 <label for="symbol">Include Symbol</label>
             </div>
 
             <!-- Strength Section -->
-            <div class="container">
+            <div class="strength-container">
                 <p>Strength</p>
-                <div data-indicator></div>
+                <div class="indicator" data-indicator></div>
             </div>
 
             <!-- generator password -->
             <button class="btn">Generate Password</button>
         </div>
+        </div>
     </div>
 <!-- External Js file -->
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
 
 </body>
 </html>

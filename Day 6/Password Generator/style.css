@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+
+}
+
+:root {
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+  
+    --dk-text: hsl(198, 20%, 13%);
+}
+ 
+.wrapper{
+    background: linear-gradient(
+    231deg,
+    rgba(22, 6, 40, 1) 0%,
+    rgba(52, 28, 79, 1) 50%,
+    rgba(88, 7, 125, 1) 100%
+  );
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column; 
+}
+
+.main-container{
+        width: 90%;
+        max-width: 450px;
+}
+
+.heading{
+  line-height: 1.2;
+  color: var(--pl-white);
+  opacity: 0.75;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  /* margin-left: 2px;
+  margin-right: 3px; */
+}
+
+.display{
+    position: relative;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+    padding-top: 0.35rem;
+    margin: 1rem 0;
+}
+
+.display input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--vb-yellow);
+    padding: 1.15rem 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+}
+
+.display input::placeholder{
+    position: absolute;
+    color: var(--vb-yellow);
+    text-transform: uppercase;
+    opacity: 0.65;
+    font-size: 1.5rem;
+    line-height: 30px;
+    /* top: 50%; */
+    left: 1.5rem;
+    /* transform: translateY(-50%); */
+}
+
+.display button{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+}
+
+.input-container {
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+    padding: 2rem;
+    width: 100%;
+    color: var(--pl-white);
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.length-container p:nth-child(1) {
+    color: var(--pl-white);
+    font-size: 1.5rem;
+}
+
+.length-container p:nth-child(2) {
+    color: var(--vb-yellow);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.copyBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.tooltip{
+    position: absolute;
+    background-color: var(--lt-violet2);
+    color: var(--vb-yellow);
+    font-size: 1.2rem;
+    top: -35px;
+    left: -25px;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin:bottom ;
+    transition: all 250ms ease-in-out;
+}
+/* Checkboxes Start */
+.check {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+.check input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--vb-cyan);
+    cursor: pointer;
+    /* //kyuki ispar tick aayega */
+    position: relative; 
+    border-radius: 0.35rem;
+}
+
+.check input:checked {
+    background-color: var(--vb-cyan);
+}
+
+.check label {
+    text-transform: capitalize;
+    color: var(--pl-white);
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+}
+
+.check input:checked::before {
+    position: absolute;
+    content: "✔";
+    color: var(--dk-text);
+    font-size: 1.05rem;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3.5px;
+}
+/* Strength Container Start  */
+
+.strength-container{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.strength-container  p {
+    color: var(--pl-white);
+    font-size: 1.5rem;
+}
+
+.indicator {
+    width: 1.5em;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: gold; 
+    /* will remove it later */
+}
+
+/* Generate Button  */
+.btn{
+    background: var(--vb-violet);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid var(--vb-yellow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.tooltip.active{
+    opacity: 1;
+    transform: scale(1);
+}
+/* slider start */
+.slide{
+  appearance: none;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  height: 0.75rem;
+  background: var(--lt-violet);
+  background-image: linear-gradient(var(--vb-violet), var(--vb-violet));
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slide:focus {
+    outline: 3px solid var(--vb-yellow);
+}
+
+/* to access the thumb of the slider we use pseudo '::-webkit-slider-thumb' */
+.slide::-webkit-slider-thumb{
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--vb-yellow);
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.5);
+    transition: all 100ms ease-in;
+    cursor: pointer;
+    margin-top: -3px;
+    z-index: 2;
+    position: relative;
+}
+
+.slide::-webkit-slider-thumb:hover {
+    outline: 2px solid var(--vb-yellow);
+    background-color: var(--dk-violet);
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.8);
+}
