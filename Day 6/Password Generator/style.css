@@ -24,6 +24,12 @@
   
     --dk-text: hsl(198, 20%, 13%);
 }
+
+
+button {
+    all: unset;
+    cursor: pointer;
+}
  
 .wrapper{
     background: linear-gradient(
@@ -207,8 +213,6 @@
     width: 1.5em;
     height: 1.5rem;
     border-radius: 50%;
-    background-color: gold; 
-    /* will remove it later */
 }
 
 /* Generate Button  */
