@@ -63,6 +63,7 @@ function caclStrength() {
     }
 }
 
+setIndicator("#ccc");
 
 // Generate Random Letters and Number and Symbols
 const symbols = '~`!@#$%^&*()_-+=:;"<,>.?/|\}{][';
@@ -73,15 +74,13 @@ function getRandomInteger(min,max){
 }
 
 function getRandomNumber(){
-    let num = getRandomInteger(0,9);
-
-    return num;
+    return getRandomInteger(0,9);
 }
+
 
 function getRandomUpperCase(){
     return String.fromCharCode(getRandomInteger(65,91));
 }
-
 
 function getRandomLowerCase(){
     return String.fromCharCode(getRandomInteger(97,123));
@@ -91,7 +90,6 @@ function generateSymbol(){
     const randomNum = getRandomInteger(0,symbols.length);
     return symbols.charAt(randomNum);
 }
-
 
 inputSlider.addEventListener('input' , (e) => {
     passwordLength = e.target.value;
@@ -181,13 +179,10 @@ generatePass.addEventListener('click' , () => {
         return;
     }
 
-
     if (passwordLength < checkCount) {
         passwordLength = checkCount;
         handleSlider();
     }
-
-
 
     //remove previous response/password
     password = "";
@@ -196,36 +191,32 @@ generatePass.addEventListener('click' , () => {
 
     //put the stuff mentioned by checkbox
     if(uppercaseCheck.checked) {
-        funcArr.push(getRandomUpperCase());
+        funcArr.push(getRandomUpperCase);
     }
 
    if(lowercaseCheck.checked){
-    funcArr.push(getRandomLowerCase());
+    funcArr.push(getRandomLowerCase);
    }
 
    if(numberCheck.checked){
-   funcArr.push(getRandomNumber());
+   funcArr.push(getRandomNumber);
    }
 
    if(symbolCheck.checked){
-   funcArr.push(generateSymbol());
+   funcArr.push(generateSymbol);
    }
-
-
 
    //compulsory addition
    for(let i = 0 ; i<funcArr.length ; i++){
-
-    password += funcArr[i];
+      password += funcArr[i]();
    }
 
     //remaining addition
     for(let i=0 ; i<passwordLength-funcArr.length ; i++){
         let randIndx = getRandomInteger(0,funcArr.length);
-        password += funcArr[randIndx];
+        password += funcArr[randIndx]();
     }
-
-    password = shuffle(Array.from(password));
+    // password = shuffle(Array.from(password));
 
     //show in UI
     passwordDisplay.value = password;
