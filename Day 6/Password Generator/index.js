@@ -110,7 +110,7 @@ async function copyToClipboard(){
         copyMsg.innerText = "Failed";
     }
 
-  //to make copy wala span visible
+  //to make copied wala span visible
   copyMsg.classList.add("active");
 
 

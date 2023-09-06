@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Link Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <p class="tab " data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="container">
+        <!-- Grant Access Location -->
+        <div class="grant-container">
+            <img src="./Images/location.png" 
+            alt="location png" 
+            width="80px" 
+            height="80px" 
+            loading="lazy"
+            />
+            <p>Grant Location Access<p>
+            <p>Allow access to get weather information</p>
+            <button class="btn" type="submit">
+                Grant Access
+            </button>
+        </div>
+
+        <!-- Loading container -->
+        <div class="loading-container">
+            <img src="./Images/loading.gif" alt="loading gif" width="100px" height="100px">
+           <p>Loading</p>
+        </div> 
+
+        <!-- Your Weather -->
+        <div class="your-weather">
+            <div class="city-name">
+                <p data-cityName></p>
+                <img data-countryFlag>
+            </div>
+            <p data-weatherDesc></p>
+            <img data-weatherIcon/>
+
+            <p data-temp></p>
+            <div class="parameter-container">
+                 <!-- Wind Speed -->
+                 <div class="parameter">
+                    <img src="./Images/wind.png" alt="wind">
+                    <p>Windspeed</p>
+                    <p class="parameter-value" data-windSpeed></p>
+                 </div>
+                 <!-- Humidity -->
+                <div class="parameter">
+                   <img src="./Images/humidity.png" alt="#" />
+                   <p>humidity</p>
+                <p class="parameterValue" data-humidity></p>
+              </div>
+  
+               <!-- Wind Speed -->
+               <div class="parameter">
+                 <img src="./Images/cloud.png" alt="#" />
+                 <p>clouds</p>
+                 <p class="parameterValue" data-clouds></p>
+               </div>
+            </div>
+        </div>
+
+
+        <!-- Search Weather -->
+        <form data-serachForm class="form-conatiner">
+            <input type="text"
+            data-searchInput
+            placeholder="Search for city...."/>
+
+            <button type="submit" class="btn">
+                <img src="./Images/search.png" alt="search png" 
+                width="20"
+                height="20"
+                loading="lazy">
+            </button>
+        </form>
+
+         <!-- Location Not Found -->
+         <div class="error-container ">
+            <img src="./Images/not-found.png" data-errorImg width="200px" height="200px"/>
+            <p data-errorText></p>
+            <button class="btn" data-errorButton>Retry Now</button>
+       </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
