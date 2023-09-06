@@ -46,13 +46,13 @@ Here is a collection of projects I've already completed during my "100 Projects 
 - **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%205)
 - **Live Demo:** [Link to Live Demo]([https://order-summary-smoky.vercel.app/](https://profile-card-component-psi-five.vercel.app/))
 
-### Day 4: Password Generator
+### Day 6: Password Generator
 - **Description:** A simple web page which Generates password 
 - **Technologies:** HTML, CSS , Javascript , API
 - **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%206)
 - **Live Demo:** [Link to Live Demo](https://password-generator-theta-ruby.vercel.app/)
 
-### Day 4: Weather Detail web page (in progress)
+### Day 7: Weather Detail web page (in progress)
 - **Description:** A web page which shows current place or any place weather
 - **Technologies:** HTML, CSS , Javascript , API 
 
