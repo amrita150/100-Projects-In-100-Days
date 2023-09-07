@@ -278,14 +278,21 @@
 
 @media (max-width: 400px){
     .wrapper{
-        overflow: scroll;
+        overflow-y: scroll; 
+        max-height: 100vh; 
     }
 
     body{
         background-color: #112d4e;
         background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);      
     }
-
+    .parameter {
+        padding: 1rem;
+        border-radius: 5px;
+        width: 40%;
+        max-width: 300px;
+        gap: 5px 0;
+    }
     .parameter-container{
         flex-direction: column;
         align-items: center;
