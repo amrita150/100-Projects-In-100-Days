@@ -1,0 +1,277 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+:root {
+    --colorDark1: #112d4e;
+    --colorDark2: #3f72af;
+    --colorLight1: #dbe2ef;
+    --colorLight2: #f9f7f7;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: var(--colorLight2);
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+
+/* Heading and Tab Container 
+ */
+ h1 {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1.75px;
+    margin-block: 2rem;
+}
+
+.tab-container{
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+    text-transform: capitalize;
+}
+
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+/* Main Container */
+.container {
+    margin-block: 4rem;
+}
+
+/* all container */
+.sub-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* grant container */
+
+.btn{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--colorDark2);
+}
+
+.grant-container{
+    display: none;
+}
+
+.grant-container.active{
+    display: flex;
+}
+
+.grant-container img{
+    margin-bottom: 1.5rem;
+}
+
+.grant-container p:first-of-type {
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.grant-container p:last-of-type {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+}
+
+/* loading container */
+
+.loading-container {
+    display: none;
+}
+
+.loading-container.active{
+    display: flex;
+}
+
+.loading-container p {
+    text-transform: uppercase;
+}
+
+/* Search weather */
+/* form container */
+.form-container{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+
+.form-container.active{
+    display: flex;
+}
+
+.form-container input{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+}
+
+
+.form-container input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.form-container::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container .btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+    border-radius: 100%;
+}
+
+.form-container .btn img{
+    object-fit: contain;
+}
+/* Form Container End */
+
+/* weather container */
+.weather-container{
+    display: none;
+}
+
+.weather-container.active{
+    display: flex;
+}
+
+.weather-container p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.weather-container img{
+    height: 70px;
+    width: 70px;
+}
+
+.city-name{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.city-name img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.weather-container p[data-temp]{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.weather-container p[data-weatherDesc]{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.parameter-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px 20px;
+    margin: 1.6rem auto 0;
+    flex-wrap: wrap;
+}
+
+.parameter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 30%;
+    max-width: 200px;
+    gap: 5px 0;
+}
+
+.parameter p {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.parameter img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.parameter-value{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+
+
+.error-container {
+    display: none;
+}
+
+.error-container.active{
+    display: flex;
+    gap: 1rem 0;
+}
+
+.error-container p {
+    text-align: center;
+}
+
+.error-container img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
