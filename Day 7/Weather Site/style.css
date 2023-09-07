@@ -275,3 +275,20 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+
+@media (max-width: 400px){
+    .wrapper{
+        overflow: scroll;
+    }
+
+    body{
+        background-color: #112d4e;
+        background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);      
+    }
+
+    .parameter-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

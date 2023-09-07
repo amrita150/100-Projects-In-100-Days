@@ -19,7 +19,7 @@ const errorImage = document.querySelector('[data-errorImg]');
 
 let currentTab = userTab;
 currentTab.classList.add("current-tab");
-
+getfromSessionStorage();
 
 //ek kaam or pending hai??
 
@@ -165,6 +165,8 @@ async function fetchSearcWeatherInfo(city){
     loadingScreen.classList.add("active");
     userInfoContainer.classList.remove("active");
     grantAccessContainer.classList.remove("active");
+    notFound.classList.remove("active");
+
 
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
