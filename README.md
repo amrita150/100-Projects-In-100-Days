@@ -44,7 +44,7 @@ Here is a collection of projects I've already completed during my "100 Projects 
 - **Description:** A simple responsive web page 
 - **Technologies:** HTML, CSS
 - **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%205)
-- **Live Demo:** [Link to Live Demo]([https://order-summary-smoky.vercel.app/](https://profile-card-component-psi-five.vercel.app/))
+- **Live Demo:** [Link to Live Demo](https://profile-card-component-psi-five.vercel.app/)
 
 ### Day 6: Password Generator
 - **Description:** A simple web page which Generates password 
@@ -53,9 +53,10 @@ Here is a collection of projects I've already completed during my "100 Projects 
 - **Live Demo:** [Link to Live Demo](https://password-generator-theta-ruby.vercel.app/)
 
 ### Day 7: Weather Detail web page (in progress)
-- **Description:** A web page which shows current place or any place weather
+- **Description:** A responsive web page that displays both your current location's weather and the weather for any place you search for.
 - **Technologies:** HTML, CSS , Javascript , API 
-
+- **Source Code:** [GitHub Repository](https://github.com/amrita150/100-Projects-In-100-Days/tree/main/Day%207)
+- **Live Demo:** [Link to Live Demo](https://weather-app-alpha-rouge.vercel.app/)
 
 ## Learning Goals
 
