@@ -160,7 +160,7 @@ font-size: 17px;
 background-color: hsl(213, 15%, 26%);
 border-radius: 15px;
 padding: 0.3rem 0.5rem;
-width: 55%;
+max-width: 300px;
 color: hsl(25, 97%, 53%);
 margin: 0 auto;
 display: flex;
