@@ -41,6 +41,7 @@ const submitBtn = document.querySelector(".btn-cont");
 const ratingBtn = document.querySelector(".rate-btn");
 
 submitBtn.addEventListener('click' , function(){
+    
     thankYouCont.classList.add("active");
     submitContainer.classList.remove("active");
 });
