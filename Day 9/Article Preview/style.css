@@ -35,7 +35,7 @@ body{
 .img-container img{
     width: 250px;
     /* height: 250px; */
-    object-fit: cover;
+    /* object-fit: cover; */
     height: 100%;
     border-bottom-left-radius:  15px;
     border-top-left-radius: 15px;
@@ -79,10 +79,10 @@ position: relative;
 }
 
 button{
-    all: unset;
-    width: 30px;
-    height: 30px;
-    background-color: var(--Light-grayish-blue);
+  all: unset;
+  width: 30px;
+  height: 30px;
+  background-color: var(--Light-grayish-blue);
   border-radius: 50%;
   border: none;
   display: flex;
@@ -130,8 +130,38 @@ button{
 .social-media-icons img{
   display: inline-block;
   margin-right: 1rem;
+  width:15px ;
+  height: 15px;
 }
 
 .social-media-icons.active{
     display: flex;
+}
+
+@media (max-width : 500px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+    }
+
+    .img-container img{
+        width: 100%;
+        height: 40vh;
+        border-bottom-left-radius:  0;
+        border-top-right-radius:15px ;
+    }
+
+    .user-detail{
+        margin-right: 4.5rem;
+    }
+
+    .profile{
+        margin-bottom: 1rem;
+    }
+
+    .details-container{
+        padding-bottom: 0rem;
+    }
+
 }
