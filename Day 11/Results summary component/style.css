@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;500;700;800&display=swap');
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-slate-blue : hsl(252, 100%, 67%);
+  --Light-royal-blue : hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue : hsla(241, 72%, 46%, 0);
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    background-color: var(--White);
+    box-shadow: 5px 5px 15px 0px var(--Light-lavender);
+    border-radius: 15px;
+    max-width: 500px;
+    /* width: 35%;
+    height: 55%; */
+}
+
+.result , .summary{
+    padding: 1.5rem;
+}
+
+.result{
+    background-color: var(--Light-royal-blue) ;
+    width: 50%;
+    border-radius: 15px;
+    color: white;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto 1fr 0.1fr auto;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content:space-between; */
+    gap: 13px;
+    margin: 1rem 0;
+    padding: 0.5rem 0.33rem;
+    border-radius: 7px;
+    padding-right:5px ;
+}
+
+.box .sco{
+    opacity: 0.5;
+}
+
+.reaction{
+    background-color:hsla(0, 100%, 67% , 10%); 
+}
+
+.reaction .reac{
+    color: var(--Light-red);
+}
+
+
+.memory{
+    background-color: hsla(39, 100%, 56% , 10%); 
+}
+
+.memory .mem{
+    color: var(--Orangey-yellow);
+}
+
+
+.verbal{
+    background-color:hsla(166, 100%, 37% , 10%); 
+}
+
+.verbal .ver{
+    color: var(--Green-teal);
+}
+
+
+.visual{
+    background-color: hsla(234, 85%, 45% , 10%);
+}
+
+.visual .vis{
+    color: var(--Cobalt-blue);
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(var(--Light-royal-blue) , var(--Violet-blue));
+    border-radius: 25px;
+    padding: 0.6rem;
+    margin-top: 2rem;
+}
+
+.btn button{
+    all: unset;
+    color: var(--Pale-blue);
+    font-size: 1.17rem;
+}
+
+/* Result container */
+
+.result{
+    text-align: center;
+}
+
+.result p{
+    margin-bottom: 1rem;
+    color: var(--Pale-blue);
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.result div{
+    margin-bottom: 1rem;
+}
+
+.result h3{
+    margin-bottom: 1rem;
+}
+
+.result p:last-child{
+    font-size: 0.9rem;
+}
+
+.circle{
+    width: 150px; 
+    height: 150px;
+    background: linear-gradient(var(--Violet-blue) , var(--Persian-blue));
+    border-radius: 50%;
+    margin-left: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle h1{
+    font-size: 3rem;
+}
+
+.circle p{
+    opacity: 0.5;
+}
