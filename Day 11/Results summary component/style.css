@@ -121,6 +121,11 @@ body{
     font-size: 1.17rem;
 }
 
+.btn:hover{
+    background: var(--Dark-gray-blue);
+    cursor: pointer;
+}
+
 /* Result container */
 
 .result{
@@ -164,4 +169,23 @@ body{
 
 .circle p{
     opacity: 0.5;
+}
+
+@media (max-width:400px) {
+    body{
+        height: 100vh;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .result{
+        width: 100vw;
+    }
+
+    .circle{
+        margin: 0 auto;
+    }
 }
