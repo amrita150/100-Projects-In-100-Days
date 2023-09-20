@@ -5,7 +5,7 @@ Frontend Mentor challenges are designed to enhance your coding skills by simulat
 
 ## Overview
 
-This web page showcases a QR code component created using HTML and CSS. The page is designed to be responsive and provides 
+This web page showcases a QR code component created using HTML and CSS. The page is
 a simple example of using basic CSS properties and flexbox to create a visually appealing layout.
 
 ## Screenshot
