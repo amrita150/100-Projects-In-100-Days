@@ -83,3 +83,10 @@ a{
     transition: 1s;
     cursor:pointer;
 }
+
+@media (max-width:400px) {
+    .card figcaption{
+        font-size: 10px;
+    }
+
+}
