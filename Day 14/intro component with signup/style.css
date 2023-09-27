@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+ --Red: hsl(0, 100%, 74%); 
+ --Green: hsl(154, 59%, 51%);
+ --Blue: hsl(248, 32%, 49%);
+ --Dark-blue: hsl(249, 10%, 26%); 
+ --Grayish-blue: hsl(246, 25%, 77%);
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: var(--Red) url(./images/bg-intro-desktop.png);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 70%;
+    max-width: 900px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 40%;
+    margin-right: 3rem;
+}
+
+.container h1{
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.container p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.form-container{
+   width: 50%;
+
+}
+
+.try-free{
+    background-color: var(--Blue);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 7px rgba(128,128,128,0.5);
+
+}
+
+.try-free p{
+    font-weight: 300;
+}
+
+.form{
+    background-color: white;
+    color: var(--Grayish-blue);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 7px rgba(128,128,128,0.5);
+}
+
+.input-field{
+    margin-bottom: 1rem;
+}
+
+.input-field input{
+    padding: 0.7rem;
+    padding-left: 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.5px solid rgba(128,128,128,0.3);
+}
+
+.input-field input::placeholder{
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+.btn{
+    /* all: unset; */
+    background-color: var(--Green);
+    border-radius: 5px;
+    padding: 0.51rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.btn button{
+    all: unset;
+}
+
+.form p{
+    font-size: 10px;
+    text-align: center;
+}
+
+.form .red-text{
+    color: var(--Red);
+    font-weight: 600;
+}
+
+.btn button:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    body{
+        background: var(--Red) url(./images/bg-intro-mobile.png);
+    }
+
+    main{
+        width: 90%;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 100%;
+        margin: 2rem 0.5rem;
+        text-align: center;
+    }
+
+    
+    .form-container{
+        width: 100%;
+    }
+}
