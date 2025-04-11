@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    transition: background-color 1.0s ease,  color 0.5s ease;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.para {
+    font-size: 20px;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+}
+
+.dark .para{
+    color: wheat;
+}
